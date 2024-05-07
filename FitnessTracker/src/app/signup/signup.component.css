@@ -38,13 +38,14 @@
     /* height: 100vh; */
 }
 .login-box mat-card-header {
-    width: 128px;
-    height: 128px;
+    height: 70px;
     padding: 0;
     margin-bottom: 16px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    font-weight: bold;
+    font-size: 30px;
 }
 .login-box mat-card-header img{
     width: 128px;
@@ -138,11 +139,6 @@ mat-card-actions {
     }
 }
 
-.sign-up{
-   
-   margin-top: 20px;
-   align-self: center;
-}
-  
+
   
   

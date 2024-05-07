@@ -1,0 +1,12 @@
+table {
+    width: 100%;
+  }
+  .addBtn{
+    background-color: transparent!important;
+    border: none;
+ 
+  }
+  .div{
+    display: inline-block;
+
+  }

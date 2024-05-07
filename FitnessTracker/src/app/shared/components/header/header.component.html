@@ -1,0 +1,56 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <button mat-icon-button class="btn"  (click)="toggleSideBar()">
+            <mat-icon >menu</mat-icon>
+        </button>
+
+        <span class="span"> FITNESS TRACKER </span>
+
+        <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+            <ul fxLayout="row" fxLayoutGap="20px">
+                <li>
+                    <button mat-icon-button class="btn">
+                        <mat-icon>settings</mat-icon>
+                    </button>
+                </li>
+                <li>
+                    <button mat-icon-button class="btn" [matMenuTriggerFor]="share">
+                        <mat-icon>share_outline</mat-icon>
+                    </button>
+                    <mat-menu #share="matMenu">
+                        <button mat-menu-item>
+                            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                           Facebook
+                        </button>
+                        <button mat-menu-item>
+                            <a href="https://twitter.com/?lang=en" class="fa fa-twitter"></a>
+                            Twitter
+                        </button>
+                        <button mat-menu-item>
+                            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                            Instagram
+                        </button>
+                        <button mat-menu-item>
+                            <a href="https://www.whatsapp.com/" class="fa fa-whatsapp"></a>
+                            Whatsapp
+                        </button>
+                        
+                    </mat-menu>
+                </li>
+                <li>
+                 
+                    <button class="btn" mat-button [matMenuTriggerFor]="menu"> 
+                        <mat-icon>person_outline</mat-icon>
+                    </button>
+                    <mat-menu #menu="matMenu">
+                        <button mat-menu-item (click)="signOut()">
+                            <mat-icon>exit_to_app</mat-icon>
+                            Sign out
+                        </button>
+                    </mat-menu>
+
+                </li>
+            </ul>
+        </div>
+    </mat-toolbar-row>
+</mat-toolbar>

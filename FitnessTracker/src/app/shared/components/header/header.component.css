@@ -1,0 +1,14 @@
+ul li {
+    list-style: none;
+  }
+  .btn{
+    background-color: transparent!important;
+    color: white;
+    border: none;
+    padding: 0
+  }
+  .span{
+    padding-left: 20px;
+    font-size: large;
+  }
+ 
